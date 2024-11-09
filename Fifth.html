@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+
+<body>
+    
+    
+    <style>
+        .gallery {
+            display: flex;
+            gap: 20px;
+        }
+        .gallery img {
+            width: 200px;
+            height: 150px;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+        .gallery img:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Image Gallery</h2>
+
+    <div class="gallery">
+        <a href="image2.jpg" target="_blank">
+            <img src="image2-thumbnail.jpg" alt="Image 2">
+        </a>
+        <a href="image3.jpg" target="_blank">
+            <img src="image3-thumbnail.jpg" alt="Image 3">
+        </a>
+        <a href="someproject.jpg" target="_blank">
+            <img src="image1-thumbnail.jpg" alt="Image 1">
+        </a>
+    </div>
+
+</body>
+</html>
+</body>
+</html>
