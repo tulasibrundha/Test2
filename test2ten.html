@@ -1,0 +1,42 @@
+<!--ten-->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS Variables</title>
+	<style>
+		:root {
+			--main-color: lime; 
+		}
+		
+		header, main {
+			background-color: var(--main-color); 
+			padding: 20px;
+			color: white;
+			text-align: center;
+		}
+		
+		header {
+			background-image: linear-gradient(to bottom, var(--main-color), green);
+		}
+		
+		main {
+			background-image: linear-gradient(to bottom, var(--main-color), lime);
+		}
+		
+		@media (max-width: 768px) {
+			:root {
+				--main-color: blue; 
+			}
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<h1>CSS Variables Example</h1>
+	</header>
+	<main>
+		<p>This webpage uses CSS variables to define the main color scheme.</p>
+	</main>
+</body>
+</html>
+
