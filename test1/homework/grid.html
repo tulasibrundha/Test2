@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container1{
+            display:grid;
+            background-color: purple;
+            text-align: left;
+            grid-template-columns: repeat(2,1fr);
+            gap: 20px;
+        }
+        .container2{
+            display:grid;
+            background-color: red;
+            text-align:right;
+            grid-template-rows: repeat(2,1fr);
+            gap: 20px;
+            grid-column: auto;
+        }
+        .container3{
+            display:grid;
+            background-color: goldenrod;
+            text-align: left;
+            grid-template-areas: repeat(2,1fr);
+            gap: 20px;
+            grid-row:span;
+        }
+        .container4{
+            display:grid;
+            background-color:brown;
+            text-align: end;
+            grid-template-columns: repeat(2,1fr);
+            gap: 20px;
+            grid-auto-flow: row;
+        }
+        .container5{
+            display:grid;
+            background-color: palevioletred;
+            text-align: center;
+            grid-template-rows: repeat(2,1fr);
+            gap: 20px;
+            grid-row-start: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container1">
+        <div>Tomato</div>
+        <div>Popato</div>
+        <div>onion</div>
+        <div>Beetroot</div>
+        <div>Carrot</div>
+    </div>
+    <div class="container2">
+        <div>Tomato</div>
+        <div>Popato</div>
+        <div>onion</div>
+        <div>Beetroot</div>
+        <div>Carrot</div>
+    </div>
+    <div class="container3">
+        <div>Tomato</div>
+        <div>Popato</div>
+        <div>onion</div>
+        <div>Beetroot</div>
+        <div>Carrot</div>
+    </div>
+    <div class="container4">
+        <div>Tomato</div>
+        <div>Popato</div>
+        <div>onion</div>
+        <div>Beetroot</div>
+        <div>Carrot</div>
+    </div>
+    <div class="container5">
+        <div>Tomato</div>
+        <div>Popato</div>
+        <div>onion</div>
+        <div>Beetroot</div>
+        <div>Carrot</div>
+    </div>
+</body>
+</html>

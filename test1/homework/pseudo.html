@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo elements</title>
+    <style>
+        h1 {
+            font-size: 24px;
+            color: black;
+        }
+        /insert on first line/
+        h1::first-line {
+         font-weight: bold;
+         color: green;
+         font-size: 1.2em;
+        }
+        /insert on first letter/
+        h1::first-letter{
+            font-size: 2.5em;
+            color: blue;
+            font-weight: bold;
+            float: left;
+            margin-right: 5px;
+        }
+        /insert on selection/
+        h1::selection{
+            background-color: yellow;
+            color: pink;
+        }
+
+
+</style>
+</head>
+<body>
+    <h1>This is a paragraph where the first line is styled separately from the rest of the text. Notice how only the first line has a different color and font style.</h1>
+
+</body>
+</html>
